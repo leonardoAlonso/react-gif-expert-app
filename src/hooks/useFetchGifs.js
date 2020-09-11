@@ -8,7 +8,7 @@ export const useFetchGifs = (category) => {
         loading: true
     });
 
-    useEffect( () => { // ejecutar cuando el componente es renderizado por primera vez
+    useEffect( () => {
         getGifs( category )
             .then( imgs => {
                 setState({
